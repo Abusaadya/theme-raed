@@ -6,10 +6,27 @@
 | image.alt   | ?string |                                                                  |
 | position    | Int     | Sorting number start from zero                                   |
 #}
-<section class="s-block s-block--fixed-banner wide-placeholder">
-    <div class="container">
-        <a href="{{ url }}" class="banner banner--fixed overflow-hidden" aria-label="Banner {{ image.alt }}">
+<section class="s-block--fixed-banner wide-placeholder mt-24">
+    <div class="flex items-center align-middle mx-auto bg-sky-300/70 h-116 w-10/12 rounded-big fixed-banner">
+        {# <a href="{{ url }}" class="banner banner--fixed overflow-hidden" aria-label="Banner {{ image.alt }}">
             <img width="1200" height="300" src="{{ image.url }}" alt="{{ image.alt|trim ? image.alt : 'fixed banner' }}"/>
         </a>
+        <h1>adel</h1> #}
+        
+        <div class="flex items-center justify-center w-1/2">
+            <div class="">
+                <h1 class="text-6xl text-white">Keep in touch</h1>
+                <h1 class="text-6xl text-white">with your child</h1>
+                <h1 class="text-6xl text-white">anytime</h1>
+                <ul>
+                    
+                </ul>
+            </div>
+        </div> 
+        <div class="flex items-center justify-center w-1/2 relative h-full">
+            <div >
+                <img class="image absolute h-200 w-100 bottom-0 start-0" src="{{image.url}}" alt="Deliver">
+            </div>
+        </div>  
     </div>
 </section>
