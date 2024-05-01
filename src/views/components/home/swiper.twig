@@ -1,24 +1,14 @@
 <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper s-slider-swiper-wrapper">
         <!-- Slides -->
         {% for slide in component.swiper %}
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden swiper-slide-visible swiper-slide-prev">
             <img src="{{ slide.image }}" />
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
         {% endfor %}
+        <div class="swiper-pagination"></div>
     </div>
 </div>
-{% block scripts %}
-<script defer src="{{ 'swiper.js' | asset }}"></script>
-{% endblock %}
+
