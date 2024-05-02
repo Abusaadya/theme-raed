@@ -56,7 +56,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     {{ theme.settings.set('placeholder', 'images/placeholder.png') }}
 
     <!-- To eliminate all render blocking CSS & JS and start with the critical css-->
@@ -100,6 +99,7 @@
           }
       }
     </style>
+    
     <script>
       window.addEventListener("load", () => {
         const loader = document.querySelector(".loader-init");
@@ -157,6 +157,26 @@
 </div>
 {% hook 'body:end' %}
 <script defer src="{{ 'app.js' | asset }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 
 {# Twilight Components #}
 <salla-offer-modal></salla-offer-modal>
