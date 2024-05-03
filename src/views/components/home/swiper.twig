@@ -1,16 +1,14 @@
 <section class="s-block s-block--slider-with-bg s-block--full-bg">
     <!-- Slider main container -->
-    <div class="swiper mySwiper container s-slider-container swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress">
+    <div class="swiper mySwiper s-slider-container swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper s-slider-swiper-wrapper"">
             <!-- Slides -->
             {% for slide in component.swiper %}
             <div class="swiper-slide swiper-lazy-wrap " role="group" aria-label="1 / 4">
-                <div style="background-image:url(${{slide.image}})" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
-                <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div>
-                <div class="swiper-slide-shadow-right" style="opacity: 0.000776398; transition-duration: 0ms;"></div></div>
-            <div class="swiper-slide swiper-lazy-wrap w-full" >
+                <div class="swiper-slide swiper-lazy-wrap w-full" >
                 <img src="{{ slide.image }}" />
+                </div>
             </div>
             {% endfor %}
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
