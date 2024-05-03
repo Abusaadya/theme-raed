@@ -15,6 +15,7 @@
   </p>
 </div>
 
+<!-- salla theme p --store=theme-store --with-editor -->
 
 <!-- TABLE OF CONTENTS -->
 <details open>
