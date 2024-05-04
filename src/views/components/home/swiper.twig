@@ -1,152 +1,16 @@
 <section class="s-block s-block--cards-slider">
     <span class="s-design-before s-design-invisible-dom" id="edit-845040392"></span>
     <div class="container">
-        <salla-slider
-            id="cards-slider-0"
-            class="cards-slider s-slider-wrapper s-slider-has-notitle s-slider-v-centered s-slider-horizontal hydrated"
-            data-position="0"
-            slider-config='{
-        "centeredSlides":"true",
-        "slidesPerView": 1,
-        "effect": "coverflow",
-        "initialSlide": 1,
-        "breakpoints":{
-          "640":{
-            "centeredSlides":"true",
-            "slidesPerView": 3,
-            "effect": "coverflow",
-            "initialSlide": 1
-          }
-        }
-      }'
-            show-controls="false"
-            block-title=""
-            block-subtitle=""
-            display-all-url=""
-            direction="rtl"
-            ><!---->
-            <div class="swiper s-slider-container swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-watch-progress" dir="rtl">
-                <div class="swiper-wrapper s-slider-swiper-wrapper" >
-                    <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden" role="group" aria-label="1 / 4">
-                        <div style="background-image: url({{component.swiper.image}})" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
-                        <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms"></div>
-                        <div class="swiper-slide-shadow-right" style="opacity: 1.00078; transition-duration: 0ms"></div>
-                    </div>
-                    <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden" role="group" aria-label="1 / 4">
-                        <div style="background-image: url(https://cdn.salla.sa/form-builder/H8cpahuAajJkytlxn6tz30HhNNoaqlm75bKND2F6.jpg)" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
-                        <div class="swiper-slide-shadow-left" style="opacity: 0.000776398; transition-duration: 0ms"></div>
-                        <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms"></div>
-                    </div>
-                    <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden" role="group" aria-label="1 / 4">
-                        <div style="background-image: url(https://cdn.salla.sa/form-builder/zyzKftNhYfmZjzU6rfRH04ufS996hlZSex7x0LYp.jpg)" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
-                        <div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms"></div>
-                        <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms"></div>
-                    </div>
-                    <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden" role="group" aria-label="1 / 4">
-                        <div style="background-image: url(https://cdn.salla.sa/form-builder/qzR0Mh66YaghS6T3AKQi5broFsjg6xyHxMS2lDfB.png)" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
-                        <div class="swiper-slide-shadow-left" style="opacity: 1.99922; transition-duration: 0ms"></div>
-                        <div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms"></div>
-                    </div>
+        <div class="swiper mySwiper s-slider-container" dir="rtl">
+            <div class="swiper-wrapper s-slider-swiper-wrapper">
+                {% for slide in component.swiper %}
+                <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden">
+                  <div style="background-image: url({{slide.image}})" class="rounded-lg absolute inset-0 bg-cover bg-center">
+                    
+                  </div>
                 </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div
-        ></salla-slider>
-        <salla-slider
-            id="cards-thumbs-slider-0"
-            class="cards-thumbs-slider pt-10 pb-5 s-slider-wrapper s-slider-has-notitle s-slider-v-centered s-slider-horizontal hydrated"
-            pagination=""
-            show-controls="false"
-            slider-config='{
-        "initialSlide": 1,
-        "speed": 600,
-        "autoHeight": "auto"
-      }'
-            show-thumbs-controls="false"
-            block-title=""
-            block-subtitle=""
-            display-all-url=""
-            direction="rtl"
-            ><!---->
-            <div class="swiper s-slider-container swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-rtl swiper-backface-hidden" dir="rtl">
-                <div class="swiper-wrapper s-slider-swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(1248px, 0px, 0px); height: 250px" id="swiper-wrapper-98a974c4a10a70161" aria-live="polite">
-                    <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 4">
-                        <div class="flex-center pb-16 home-slider__content relative h-full">
-                            <div class="flex flex-col items-center gap-6 lg:w-4/6 text-center">
-                                <div>
-                                    <h3 data-swiper-parallax="-500" class="text-3xl lg:text-[40px] font-bold mb-4">تسوق ووفر معانا الكثير</h3>
-                                    <p data-swiper-parallax="-300" class="description text-base lg:text-xl max-w-2xl opacity-70">نعتني بكم في كل وقت و زمان..تمتع اليوم بتجربة حجز سهلة وسريعة لراحتكم إستكشف المجموعات الأكثر شهرة من البطاقات الرقمية .</p>
-                                </div>
-                                <salla-button class="btn--main s-button-wrap hydrated" href="https://salla.sa/dev-oqcqlpcznkeprnnu/redirect/products/1065810355" shape="btn" color="primary" fill="solid" size="medium" width="normal" type="button"
-                                    ><!----><a href="https://salla.sa/dev-oqcqlpcznkeprnnu/redirect/products/1065810355"
-                                        ><button class="btn--main s-button-element s-button-btn s-button-solid s-button-primary s-button-loader-after" href="https://salla.sa/dev-oqcqlpcznkeprnnu/redirect/products/1065810355" type="button">
-                                            <span class="s-button-text">
-                                                <span>عرض الكوبونات</span>
-                                                <span class="icon sicon-arrow-up-left"></span>
-                                            </span></button></a
-                                ></salla-button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 4">
-                        <div class="flex-center pb-16 home-slider__content relative h-full">
-                            <div class="flex flex-col items-center gap-6 lg:w-4/6 text-center">
-                                <div>
-                                    <h3 data-swiper-parallax="-500" class="text-3xl lg:text-[40px] font-bold mb-4">تسوق ووفر معانا الكثير</h3>
-                                    <p data-swiper-parallax="-300" class="description text-base lg:text-xl max-w-2xl opacity-70">نعتني بكم في كل وقت و زمان..تمتع اليوم بتجربة حجز سهلة وسريعة لراحتكم إستكشف المجموعات الأكثر شهرة من البطاقات الرقمية .</p>
-                                </div>
-                                <salla-button class="btn--main s-button-wrap hydrated" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" shape="btn" color="primary" fill="solid" size="medium" width="normal" type="button"
-                                    ><!----><a href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers"
-                                        ><button class="btn--main s-button-element s-button-btn s-button-solid s-button-primary s-button-loader-after" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" type="button">
-                                            <span class="s-button-text">
-                                                <span>عرض الكوبونات</span>
-                                                <span class="icon sicon-arrow-up-left"></span>
-                                            </span></button></a
-                                ></salla-button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 4">
-                        <div class="flex-center pb-16 home-slider__content relative h-full">
-                            <div class="flex flex-col items-center gap-6 lg:w-4/6 text-center">
-                                <div>
-                                    <h3 data-swiper-parallax="-500" class="text-3xl lg:text-[40px] font-bold mb-4">تسوق ووفر معانا الكثير</h3>
-                                    <p data-swiper-parallax="-300" class="description text-base lg:text-xl max-w-2xl opacity-70">نعتني بكم في كل وقت و زمان..تمتع اليوم بتجربة حجز سهلة وسريعة لراحتكم إستكشف المجموعات الأكثر شهرة من البطاقات الرقمية .</p>
-                                </div>
-                                <salla-button class="btn--main s-button-wrap hydrated" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" shape="btn" color="primary" fill="solid" size="medium" width="normal" type="button"
-                                    ><!----><a href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers"
-                                        ><button class="btn--main s-button-element s-button-btn s-button-solid s-button-primary s-button-loader-after" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" type="button">
-                                            <span class="s-button-text">
-                                                <span>عرض الكوبونات</span>
-                                                <span class="icon sicon-arrow-up-left"></span>
-                                            </span></button></a
-                                ></salla-button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" role="group" aria-label="4 / 4">
-                        <div class="flex-center pb-16 home-slider__content relative h-full">
-                            <div class="flex flex-col items-center gap-6 lg:w-4/6 text-center">
-                                <div>
-                                    <h3 data-swiper-parallax="-500" class="text-3xl lg:text-[40px] font-bold mb-4">تسوق ووفر معانا الكثير</h3>
-                                    <p data-swiper-parallax="-300" class="description text-base lg:text-xl max-w-2xl opacity-70">نعتني بكم في كل وقت و زمان..تمتع اليوم بتجربة حجز سهلة وسريعة لراحتكم إستكشف المجموعات الأكثر شهرة من البطاقات الرقمية .</p>
-                                </div>
-                                <salla-button class="btn--main s-button-wrap hydrated" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" shape="btn" color="primary" fill="solid" size="medium" width="normal" type="button"
-                                    ><!----><a href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers"
-                                        ><button class="btn--main s-button-element s-button-btn s-button-solid s-button-primary s-button-loader-after" href="https://salla.sa/dev-oqcqlpcznkeprnnu/offers" type="button">
-                                            <span class="s-button-text">
-                                                <span>عرض المزيد</span>
-                                                <span class="icon sicon-arrow-up-left"></span>
-                                            </span></button></a
-                                ></salla-button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span
-                    ><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-                </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div
-        ></salla-slider>
+            {% endfor %}
+        </div>
     </div>
     <span id="after-845040392" class="s-design-invisible-dom s-design-after"></span>
 </section>
