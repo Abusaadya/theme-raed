@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import Anime from './partials/anime';
 import initTootTip from './partials/tooltip';
 import AppHelpers from "./app-helpers";
-import Swiper from 'swiper';
+
 
 class App extends AppHelpers {
   constructor() {
@@ -34,7 +34,6 @@ class App extends AppHelpers {
     document.dispatchEvent(new CustomEvent('theme::ready'));
     this.log('Theme Loaded 🎉');
   }
-
 
 
   log(message) {
