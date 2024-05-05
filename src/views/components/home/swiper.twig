@@ -1,7 +1,7 @@
 <section class="s-block s-block--cards-slider">
     <span class="s-design-before s-design-invisible-dom" id="edit-845040392"></span>
     <div class="container">
-        <div class="swiper mySwiper s-slider-container" dir="rtl">
+        <div class="swiper mySwiper s-slider-container">
             <div class="swiper-wrapper s-slider-swiper-wrapper">
                 {% for slide in component.swiper %}
                 <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden">
@@ -10,7 +10,6 @@
                 {% endfor %}
             </div>
         </div>
-        <span id="after-845040392" class="s-design-invisible-dom s-design-after"></span>
     </div>
 </section>
 
@@ -21,9 +20,9 @@
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        centeredSlidesBounds: true,
-        slidesPerView: "auto",
+        slidesPerView: "3",
         slidesPerGroup: 1,
+        initialSlide: 1,
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
