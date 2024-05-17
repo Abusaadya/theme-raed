@@ -870,41 +870,6 @@
                     "maxLength": 5
                 }
             ]
-        },
-        {
-            "key": "0a08caaa-60ef-49e0-ae30-dffcb953bdc7",
-            "title": "custom",
-            "icon": "sicon-store",
-            "path": "home.custom",
-            "fields": [
-                {
-                    "id": "custom",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "custom",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "custom.Image",
-                            "type": "string",
-                            "format": "image",
-                            "label": "custom.Image",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "e.g. https://hostname.com/image.png",
-                            "icon": "sicon-image",
-                            "value": null,
-                            "required": true
-                        }
-                    ],
-                    "value": [],
-                    "minLength": 1,
-                    "maxLength": 5
-                }
-            ]
         }
     ],
     "support_url": "https://salla.com/",
