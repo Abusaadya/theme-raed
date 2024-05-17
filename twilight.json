@@ -876,7 +876,35 @@
             "title": "customSlider",
             "icon": "sicon-store",
             "path": "home.customSlider",
-            "fields": []
+            "fields": [
+                {
+                    "id": "adel",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "adel",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "adel.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "adel.Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
