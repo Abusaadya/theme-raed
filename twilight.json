@@ -870,6 +870,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "10407876-3374-49b0-b96f-ec4dd0aa56a5",
+            "title": "sweep",
+            "icon": "sicon-store",
+            "path": "home.sweep",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
