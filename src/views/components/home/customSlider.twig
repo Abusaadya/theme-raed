@@ -1,10 +1,9 @@
 <!-- Basic Salla Slider component Usage -->
 <salla-slider id="thumbs" show-controls="true" type="thumbs" class="swiper-22">
     <div slot="items swiper">
-      <img src="https://picsum.photos/600/400?">
-      <img src="https://picsum.photos/600/400?">
-      <img src="https://picsum.photos/600/400?">
-      <img src="https://picsum.photos/600/400?">
+        {% for slide in component.customSlider %}
+        <img src="{{slide.image}}">
+        {% endfor %}
     </div>
   </salla-slider>
 
