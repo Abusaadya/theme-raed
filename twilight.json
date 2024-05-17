@@ -878,20 +878,20 @@
             "path": "home.customSlider",
             "fields": [
                 {
-                    "id": "customSlider",
+                    "id": "custom",
                     "type": "collection",
                     "format": "collection",
-                    "label": "customSlider",
+                    "label": "custom",
                     "description": null,
                     "labelHTML": null,
                     "item_label": null,
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "customSlider.Image",
+                            "id": "custom.Image",
                             "type": "string",
                             "format": "image",
-                            "label": "customSlider.Image",
+                            "label": "custom.Image",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
