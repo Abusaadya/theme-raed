@@ -876,7 +876,35 @@
             "title": "sweep",
             "icon": "sicon-store",
             "path": "home.sweep",
-            "fields": []
+            "fields": [
+                {
+                    "id": "sweep",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "sweep",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "sweep.image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "sweep.image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
