@@ -878,7 +878,7 @@
             "path": "home.customSlider",
             "fields": [
                 {
-                    "id": "adel",
+                    "id": "customSlider",
                     "type": "collection",
                     "format": "collection",
                     "label": "customSlider",
@@ -888,7 +888,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "adel.image",
+                            "id": "customSlider.Image",
                             "type": "string",
                             "format": "image",
                             "label": "customSlider.Image",
