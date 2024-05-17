@@ -873,9 +873,9 @@
         },
         {
             "key": "0a08caaa-60ef-49e0-ae30-dffcb953bdc7",
-            "title": "customSlider",
+            "title": "custom",
             "icon": "sicon-store",
-            "path": "home.customSlider",
+            "path": "home.custom",
             "fields": [
                 {
                     "id": "custom",
