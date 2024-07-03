@@ -1,7 +1,7 @@
 <section class="s-block s-block--cards-slider">
     <span class="s-design-before s-design-invisible-dom" id="edit-845040392"></span>
     <div class="container">
-        <div class="swiper mySwiper s-slider-container">
+        <salla-swiper class="swiper  s-slider-container" slider-config="{"centeredSlides":"true","slidesPerView": "1","effect": "coverflow","initialSlide\": "1","breakpoints\":{"coverflowEffect":{"centeredSlides":"true","slidesPerView": "3","effect":"coverflow","initialSlide": "1"}}">
             <div class="swiper-wrapper s-slider-swiper-wrapper">
                 {% for slide in component.swiper %}
                 <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden">
@@ -9,30 +9,7 @@
                 </div>
                 {% endfor %}
             </div>
-        </div>
+        </salla-swiper>
     </div>
 </section>
 
-{% block scripts %}
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "3",
-        slidesPerGroup: 1,
-        initialSlide: 1,
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-</script>
-{% endblock %}

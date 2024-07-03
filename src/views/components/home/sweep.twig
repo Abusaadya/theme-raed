@@ -1,6 +1,6 @@
 <!-- Basic Salla Slider component Usage -->
-<salla-slider  class="sweep swiper">
-    <div slot="items" class="swiper-wrapper">
+<salla-slider  class="card-slider" slider-config="{"centeredSlides":"true","slidesPerView": "1","effect": "coverflow","initialSlide\": "1","breakpoints\":{"coverflowEffect":{"centeredSlides":"true","slidesPerView": "3","effect":"coverflow","initialSlide": "1"}}">
+    <div slot="items" class="swiper-wrapper swiper">
         {% for slide in component.sweep %}
                 <div class="swiper-slide swiper-lazy-wrap w-full min-h-[370px] lg:min-h-[500px] bg-gray-100 dark:bg-dark my-4 rounded overflow-hidden">
                     <div style="background-image: url({{slide.image}})" class="rounded-lg absolute inset-0 bg-cover bg-center"></div>
@@ -11,25 +11,3 @@
 
 </salla-slider>
 
-{% block scripts %}
-<script>
-    var swiper = new Swiper(".sweep", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "3",
-        slidesPerGroup: 1,
-        initialSlide: 1,
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-</script>
-{% endblock %}
